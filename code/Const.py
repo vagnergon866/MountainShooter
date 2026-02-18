@@ -19,7 +19,11 @@ ENTITY_SPEED = {
     'Player1': 3,
     'Player2': 3,
     'Enemy1': 2,
-    'Enemy2': 1
+    'Enemy2': 1,
+    'Player1Shot': 5,
+    'Player2Shot': 5,
+    'Enemy1Shot': 6,
+    'Enemy2Shot': 3
 }
 
 ENTITY_HEALTH = {
@@ -33,7 +37,18 @@ ENTITY_HEALTH = {
     'Player1': 300,
     'Player2': 300,
     'Enemy1': 50,
-    'Enemy2': 60
+    'Enemy2': 60,
+    'Player1Shot': 1,
+    'Player2Shot': 1,
+    'Enemy1Shot': 1,
+    'Enemy2Shot': 1
+}
+
+ENTITY_SHOT_DELAY = {
+    'Player1': 20,
+    'Player2': 15,
+    'Enemy1': 100,
+    'Enemy2': 100
 }
 
 # M
