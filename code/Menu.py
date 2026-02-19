@@ -6,7 +6,7 @@ import pygame.image
 from pygame import Surface
 from pygame.locals import Rect
 
-from code.Const import WINDOW_WIDTH, WINDOW_HEIGHT, COLOR_ORANGE, MENU_OPTION, COLOR_WHITE, COLOR_YELLOW
+from code.Const import WINDOW_WIDTH, WINDOW_HEIGHT, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW
 
 
 class Menu:
@@ -22,14 +22,14 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Mountain", COLOR_ORANGE, ((WINDOW_WIDTH / 2), 70))
-            self.menu_text(40, "Shooter", COLOR_ORANGE, ((WINDOW_WIDTH / 2), 120))
+            self.menu_text(50, "Mountain", C_ORANGE, ((WINDOW_WIDTH / 2), 70))
+            self.menu_text(40, "Shooter", C_ORANGE, ((WINDOW_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(20, MENU_OPTION[i], COLOR_YELLOW, ((WINDOW_WIDTH / 2), 180 + 30 * i))
+                    self.menu_text(20, MENU_OPTION[i], C_YELLOW, ((WINDOW_WIDTH / 2), 180 + 30 * i))
                 else:
-                    self.menu_text(20, MENU_OPTION[i], COLOR_WHITE, ((WINDOW_WIDTH / 2), 180 + 30 * i))
+                    self.menu_text(20, MENU_OPTION[i], C_WHITE, ((WINDOW_WIDTH / 2), 180 + 30 * i))
             pygame.display.flip()
             # Check for all events
             for event in pygame.event.get():
